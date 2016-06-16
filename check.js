@@ -10,7 +10,7 @@ $('#maincanvas').click(function(e) {
     var x = e.pageX - offset.left;
     var y = e.pageY - offset.top;
     var blocknumber = getblocknumberforcoordinates(x,y);
-    if (filledcircles.indexOf(blocknumber) == -1 || filledlines.indexOf(blocknumber) == -1) {
+    if (filledcircles.indexOf(blocknumber) == -1 && filledlines.indexOf(blocknumber) == -1) {
         if (clickcount % 2 == 0) {
             var circlecoordinates = getcirclecoordinates(blocknumber);
             drawcircleusingcoordinates(circlecoordinates);
