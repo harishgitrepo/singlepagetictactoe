@@ -1,0 +1,31 @@
+<html>
+   <head>
+	<title>Tic Tac Toe</title>
+   </head>
+<body>
+	<canvas id="maincanvas" width="400px" height="350px"></canvas>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="./check.js"></script>
+
+<script type="text/javascript">
+var c=document.getElementById("maincanvas");
+var ctx=c.getContext("2d");
+ctx.lineWidth=2;
+ctx.moveTo(133.33,0);
+ctx.lineTo(133.33,350);
+ctx.stroke();
+ctx.moveTo(266.6,0);
+ctx.lineTo(266.6,350);
+ctx.stroke();
+ctx.moveTo(0,116.66);
+ctx.lineTo(400,116.66);
+ctx.stroke();
+ctx.moveTo(0,233.33);
+ctx.lineTo(400,233.33);
+ctx.stroke();
+
+
+</script>
+</body>
+</html>
